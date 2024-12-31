@@ -10,10 +10,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 110vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .player {
   height: 90vh;
@@ -90,10 +86,8 @@ body {
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
 }
-.seek_slider::-webkit-slider-thumb,
+/* .seek_slider::-webkit-slider-thumb,
 .volume_slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   width: 15px;
   height: 15px;
@@ -101,7 +95,7 @@ body {
   border: 2px solid #3774ff;
   cursor: grab;
   border-radius: 100%;
-}
+} */
 .seek_slider:hover,
 .volume_slider:hover {
   opacity: 1;
@@ -188,4 +182,71 @@ p {
 }
 .stroke:nth-child(7) {
   animation-delay: 0s;
+}
+
+/* Treklar ro'yxati uslubi */
+/* Treklar ro'yxati uslubi */
+#track-list {
+  margin: 20px auto;
+  padding: 0;
+  list-style-type: none;
+  max-width: 600px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#track-list li {
+  width: 30%;
+  height: 300px;
+  padding: 15px 20px;
+  margin: 10px 0;
+  background-color: #1862bc;
+  color: #afe44b;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+#track-list li:hover {
+  color: #128fee;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+#track-list li:nth-child(1) {
+  background-image: url(/assets/images/OrkhanZeynalli.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#track-list li:nth-child(2) {
+  background-image: url(/assets/images/ceza.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#track-list li:nth-child(3) {
+  background-image: url(/assets/images/Gazapizm.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#track-list li:nth-child(4) {
+  background-image: url(/assets/images/AID.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#track-list li:nth-child(5) {
+  background-image: url(/assets/images//istedem.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#track-list li:nth-child(6) {
+  background-image: url(/assets/images/gaybulla-tursunov-yor.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }

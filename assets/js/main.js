@@ -184,3 +184,20 @@ function setUpdate() {
     total_duration.textContent = durationMinutes + ":" + durationSeconds;
   }
 }
+
+// Treklar ro'yxati
+function createTrackList() {
+  const trackList = document.getElementById("track-list");
+  music_list.forEach((song, index) => {
+    const li = document.createElement("li");
+    li.textContent = `${index + 1}. ${song.name} - ${song.artist}`;
+    li.addEventListener("click", () => {
+      track_index = index;
+      loadTrack(track_index);
+      playTrack();
+    });
+    trackList.appendChild(li);
+  });
+}
+
+createTrackList();
